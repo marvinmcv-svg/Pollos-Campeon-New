@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es-BO">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="theme-color" content="#e00217" />
+<title>Campeón Admin</title>
+<link rel="icon" href="/favicon.ico" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/admin/admin.css" />
+</head>
+<body>
+<div id="login" class="login" hidden>
+  <form class="login__card" id="loginform">
+    <img src="/assets/img/logo.png" width="64" height="64" alt="" />
+    <h1>Campeón Admin</h1>
+    <p class="muted">Ingreso para el equipo de Pollos Campeón.</p>
+    <label class="field"><span>Correo</span><input class="input" type="email" id="lemail" autocomplete="username" required /></label>
+    <label class="field"><span>Contraseña</span><input class="input" type="password" id="lpass" autocomplete="current-password" required /></label>
+    <button class="btn btn--primary btn--block" type="submit">Entrar</button>
+    <p class="err" id="lerr" role="alert"></p>
+  </form>
+</div>
+<div id="app" class="app" hidden>
+  <aside class="side">
+    <a class="side__brand" href="#/hoy"><img src="/assets/img/logo.png" width="36" height="36" alt="" /><span>Campeón</span></a>
+    <nav id="nav" class="nav" aria-label="Secciones"></nav>
+    <div class="side__me" id="me"></div>
+  </aside>
+  <main class="main" id="view" tabindex="-1"></main>
+</div>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<div id="noconfig" class="login" hidden><div class="login__card"><img src="/assets/img/logo.png" width="64" height="64" alt="" /><h1>Falta configurar</h1><p>Completá <code>supabaseUrl</code> y <code>supabaseKey</code> en <code>js/config.js</code> y volvé a publicar.</p></div></div>
+<script src="/js/data.js"></script>
+<script src="/js/config.js"></script>
+<script src="/admin/vendor/supabase.js"></script>
+<script type="module" src="/admin/app.js"></script>
+</body>
+</html>

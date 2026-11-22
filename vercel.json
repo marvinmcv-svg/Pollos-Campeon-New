@@ -1,0 +1,7 @@
+{
+  "functions": { "api/campeia.js": { "maxDuration": 60 } },
+  "headers": [
+    { "source": "/admin/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }] },
+    { "source": "/sigue-tu-pollo/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }] }
+  ]
+}

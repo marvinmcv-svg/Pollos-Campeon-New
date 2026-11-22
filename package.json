@@ -2,9 +2,15 @@
   "name": "pollos-campeon",
   "version": "1.0.0",
   "private": true,
-  "description": "Pollos Campeón · sitio web + recepcionista virtual Campe-IA",
-  "engines": { "node": ">=20" },
-  "scripts": { "dev": "vercel dev" },
+  "description": "Pollos Campeón · sitio + Campe-IA + pedidos (Supabase) + backoffice",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/tools.test.js",
+    "dev": "vercel dev",
+    "seed": "node scripts/seed-sql.js > supabase/seed.sql"
+  },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.12.0",
     "openai": "^4.104.0"
