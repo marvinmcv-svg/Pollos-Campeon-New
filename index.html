@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="es-BO">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Pollos Campeón · El pollo #1 de Bolivia · Santa Cruz de la Sierra</title>
+  <meta name="description" content="Pollo a la brasa y broaster con tradición desde 1981. 15 sucursales en Santa Cruz de la Sierra, promos de lunes a viernes y pedidos por WhatsApp." />
+  <meta name="theme-color" content="#e3283f" />
+  <link rel="canonical" href="https://pollos-campeon.vercel.app/" />
+
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:site_name" content="Pollos Campeón" />
+  <meta property="og:title" content="Pollos Campeón · El pollo #1 de Bolivia" />
+  <meta property="og:description" content="Tradición desde 1981. Pollo a la brasa, broaster y promos de lunes a viernes en 15 sucursales de Santa Cruz." />
+  <meta property="og:image" content="https://pollos-campeon.vercel.app/assets/brand/polloscampeon-logo-share.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:url" content="https://pollos-campeon.vercel.app/" />
+  <meta property="og:locale" content="es_BO" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pollos Campeón · El pollo #1 de Bolivia" />
+  <meta name="twitter:description" content="Tradición desde 1981. Pedí por WhatsApp a tu sucursal." />
+  <meta name="twitter:image" content="https://pollos-campeon.vercel.app/assets/brand/polloscampeon-logo-share.jpg" />
+
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/assets/img/fan-pollo-entero.webp" />
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Pollos Campeón",
+    "slogan": "El pollo #1 de Bolivia",
+    "foundingDate": "1981",
+    "servesCuisine": ["Pollo a la brasa", "Pollo broaster", "Comida rápida"],
+    "priceRange": "Bs 1 – Bs 144",
+    "telephone": "+591 79899998",
+    "image": "https://pollos-campeon.vercel.app/assets/brand/polloscampeon-logo-share.jpg",
+    "address": { "@type": "PostalAddress", "streetAddress": "Av. Cañoto 571, esquina Junín", "addressLocality": "Santa Cruz de la Sierra", "addressCountry": "BO" },
+    "sameAs": ["https://www.instagram.com/polloscampeon.oficial/", "https://www.facebook.com/PollosChampion", "https://linktr.ee/polloscampeon", "https://polloscampeon.com/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__in">
+      <a class="nav__brand" href="#top" aria-label="Pollos Campeón, inicio">
+        <img src="/assets/img/logo.png" width="44" height="44" alt="" />
+        <span>Pollos Campeón</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Principal">
+        <a href="#menu">Menú</a>
+        <a href="#promos">Promos</a>
+        <a href="#pedir">Pedir</a>
+        <a href="#sucursales">Sucursales</a>
+        <a href="#historia">Historia</a>
+        <button class="nav__ai" type="button" data-campeia-open>Campe-IA ✨</button>
+      </nav>
+      <button class="btn btn--cream nav__cart" type="button" id="cartBtn" aria-label="Ver tu pedido">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="nav__cart-label">Pedido</span>
+        <span class="badge" id="cartCount">0</span>
+      </button>
+      <button class="nav__burger" type="button" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="wrap hero__in">
+        <p class="live" id="livePill"><span class="live__dot"></span><span id="liveText">15 sucursales en Santa Cruz</span></p>
+        <h1 class="hero__title">
+          <span class="mask"><span class="line">El pollo #1</span></span>
+          <span class="mask"><span class="line line--2">de Bolivia.</span></span>
+        </h1>
+        <div class="hero__grid">
+          <div class="hero__left">
+            <p class="hero__lede">Pollo a la brasa, broaster crocante y promos de lunes a viernes. Tradición cruceña desde 1981.</p>
+            <div class="hero__ctas">
+              <a class="btn btn--mustard btn--lg" href="#pedir" data-intent="delivery">Pedí por WhatsApp →</a>
+              <a class="btn btn--ghost btn--lg" href="#menu">Ver el menú</a>
+            </div>
+          </div>
+          <div class="fan" id="fan" aria-label="Lo más pedido">
+            <figure class="fan__card fan__card--l">
+              <img src="/assets/img/fan-lasana.webp" width="480" height="800" alt="Lasaña de Pollos Campeón" />
+              <figcaption class="chip"><b>Lasañas</b> Bs 38</figcaption>
+            </figure>
+            <figure class="fan__card fan__card--c">
+              <img src="/assets/img/fan-pollo-entero.webp" width="480" height="800" alt="Pollo entero a la brasa con papas" fetchpriority="high" />
+              <figcaption class="chip"><b>Pollo a la brasa</b> 🔥</figcaption>
+            </figure>
+            <figure class="fan__card fan__card--r">
+              <img src="/assets/img/fan-platanos.webp" width="480" height="800" alt="Porción de plátanos fritos" />
+              <figcaption class="chip"><b>Plátanos</b> Bs 12</figcaption>
+            </figure>
+            <div class="sticker" aria-hidden="true">
+              <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+                <text><textPath href="#circ">TRADICIÓN DESDE 1981 · EL POLLO #1 DE BOLIVIA ·</textPath></text></svg>
+              <span class="sticker__mid">#1</span>
+            </div>
+          </div>
+          <ul class="stats" id="stats"></ul>
+        </div>
+      </div>
+      <div class="stripes stripes--bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+
+    <!-- WEEKLY PROMOS -->
+    <section class="section section--cream" id="promos">
+      <div class="wrap">
+        <div class="head head--row">
+          <div>
+            <p class="eyebrow">Calendario campeón</p>
+            <h2 class="display">De lunes a viernes <span class="hl">hay promos.</span></h2>
+            <p class="sub" id="weeklyNote"></p>
+          </div>
+          <button class="btn btn--red" type="button" id="calBtn">Ver el calendario</button>
+        </div>
+        <div class="week" id="week"></div>
+      </div>
+    </section>
+
+    <!-- SPECIAL -->
+    <section class="section section--deep special" id="especial" hidden>
+      <div class="wrap special__in" id="special"></div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section section--cream" id="menu">
+      <div class="wrap">
+        <div class="head head--row">
+          <div>
+            <p class="eyebrow">Nuestro menú</p>
+            <h2 class="display">Pedí como <span class="hl">campeón.</span></h2>
+            <p class="sub" id="priceNote"></p>
+          </div>
+          <div class="coins" aria-hidden="true">
+            <div class="coin"><b>¼</b><span>cuarto<br>de pollo</span></div>
+            <div class="coin coin--blue"><b>1</b><span>pollo<br>entero</span></div>
+          </div>
+        </div>
+        <div class="tabs" role="tablist" id="menuTabs" aria-label="Categorías del menú"></div>
+        <div class="menu-list" id="menuList" role="tabpanel"></div>
+        <button class="btn btn--red menu-more" type="button" id="menuMore" hidden></button>
+        <div class="addons" id="addons"></div>
+      </div>
+    </section>
+
+    <!-- COMBOS + FEATURED -->
+    <section class="section section--wine" id="combos">
+      <div class="wrap">
+        <div class="head">
+          <p class="eyebrow eyebrow--mustard">Para compartir</p>
+          <h2 class="display display--cream">La mesa llena, <span class="hl hl--mustard">el corazón también.</span></h2>
+        </div>
+        <div class="combos" id="combosGrid"></div>
+        <div class="feat" id="featGrid"></div>
+        <p class="fine" id="combosFine"></p>
+      </div>
+    </section>
+
+    <!-- LOCALES RAIL -->
+    <section class="section section--red rail-sec" id="locales">
+      <div class="wrap head head--row">
+        <div>
+          <p class="eyebrow eyebrow--cream">Nuestros locales</p>
+          <h2 class="display display--cream">Rojo, rayado <span class="hl hl--mustard">y campeón.</span></h2>
+        </div>
+        <div class="rail-nav">
+          <button class="icon-btn" type="button" id="railPrev" aria-label="Anterior">←</button>
+          <button class="icon-btn" type="button" id="railNext" aria-label="Siguiente">→</button>
+        </div>
+      </div>
+      <div class="rail" id="rail"></div>
+    </section>
+
+    <!-- FUNNEL -->
+    <section class="section section--wine funnel-sec" id="pedir">
+      <div class="wrap">
+        <div class="head">
+          <p class="eyebrow eyebrow--mustard">Pedido por WhatsApp</p>
+          <h2 class="display display--cream">Tu pedido <span class="hl hl--mustard">en 4 pasos.</span></h2>
+          <p class="sub sub--cream">Armalo acá y te abrimos WhatsApp con el mensaje listo para tu sucursal.</p>
+        </div>
+        <div class="funnel">
+          <form class="funnel__form" id="funnel" novalidate>
+            <ol class="steps" id="steps">
+              <li><button type="button" data-step="1" class="is-on"><b>01</b><span> · Qué necesitás</span></button></li>
+              <li><button type="button" data-step="2"><b>02</b><span> · Detalle</span></button></li>
+              <li><button type="button" data-step="3"><b>03</b><span> · Tus datos</span></button></li>
+              <li><button type="button" data-step="4"><b>04</b><span> · Enviar</span></button></li>
+            </ol>
+
+            <fieldset class="step is-on" data-panel="1">
+              <legend class="sr">¿Qué necesitás?</legend>
+              <div class="intents">
+                <label class="intent"><input type="radio" name="intent" value="delivery" checked /><span><i>01</i><b>Delivery</b><small>Te lo llevamos</small></span></label>
+                <label class="intent"><input type="radio" name="intent" value="pickup" /><span><i>02</i><b>Para llevar</b><small>Pasás a recoger</small></span></label>
+                <label class="intent"><input type="radio" name="intent" value="event" /><span><i>03</i><b>Mesa o evento</b><small>Cumple, empresa, familia</small></span></label>
+                <label class="intent"><input type="radio" name="intent" value="question" /><span><i>04</i><b>Consulta</b><small>Preguntanos lo que sea</small></span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="step" data-panel="2">
+              <legend class="sr">Detalle</legend>
+              <div data-for="order">
+                <div class="f-cart" id="fCart"></div>
+                <div class="tabs tabs--dark" id="fTabs" role="tablist" aria-label="Categorías"></div>
+                <div class="f-picker" id="fPicker"></div>
+              </div>
+              <div data-for="event" hidden>
+                <div class="row3">
+                  <label class="field"><span>Fecha</span><input type="date" id="evDate" /></label>
+                  <label class="field"><span>Hora</span><input type="time" id="evTime" /></label>
+                  <label class="field"><span>Personas</span><input type="number" min="1" max="500" id="evPeople" placeholder="8" /></label>
+                </div>
+                <div class="chips" id="evChips">
+                  <button type="button" class="chip-btn" data-v="🎂 Cumpleaños">🎂 Cumpleaños</button>
+                  <button type="button" class="chip-btn" data-v="💼 Empresa">💼 Empresa</button>
+                  <button type="button" class="chip-btn" data-v="👨‍👩‍👧 Familia">👨‍👩‍👧 Familia</button>
+                  <button type="button" class="chip-btn" data-v="🍗 Amigos">🍗 Amigos</button>
+                </div>
+                <label class="field"><span>Contanos más</span><textarea id="evNote" rows="3" placeholder="Ej.: somos 12, queremos pollo entero con guarniciones…"></textarea></label>
+              </div>
+              <div data-for="question" hidden>
+                <div class="chips" id="qChips">
+                  <button type="button" class="chip-btn" data-v="Menú y precios">Menú y precios</button>
+                  <button type="button" class="chip-btn" data-v="Promos">Promos</button>
+                  <button type="button" class="chip-btn" data-v="Delivery">Delivery</button>
+                  <button type="button" class="chip-btn" data-v="Pack Navideño">Pack Navideño</button>
+                  <button type="button" class="chip-btn" data-v="Otro">Otro</button>
+                </div>
+                <label class="field"><span>Tu consulta</span><textarea id="qText" rows="4" placeholder="Escribinos acá…"></textarea></label>
+                <button type="button" class="link-ai" data-campeia-open>¿Querés respuesta al toque? Preguntale a Campe-IA ✨</button>
+              </div>
+            </fieldset>
+
+            <fieldset class="step" data-panel="3">
+              <legend class="sr">Tus datos</legend>
+              <div class="row2">
+                <label class="field"><span>Tu nombre</span><input id="fName" autocomplete="name" placeholder="Nombre y apellido" /></label>
+                <label class="field"><span>Sucursal</span><select id="fBranch"></select></label>
+              </div>
+              <div class="row2" data-for="delivery">
+                <label class="field"><span>Dirección</span><input id="fAddr" autocomplete="street-address" placeholder="Barrio, calle, número" /></label>
+                <label class="field"><span>Referencia</span><input id="fRef" placeholder="Casa con portón azul…" /></label>
+              </div>
+              <div data-for="when">
+                <p class="field__lbl">¿Para cuándo?</p>
+                <div class="chips" id="whenChips">
+                  <button type="button" class="chip-btn is-on" data-v="asap">⚡ Lo antes posible</button>
+                  <button type="button" class="chip-btn" data-v="later">🕒 Programar</button>
+                  <input type="time" id="fTime" class="time-in" hidden aria-label="Hora programada" />
+                </div>
+              </div>
+              <label class="field"><span>Nota (opcional)</span><input id="fNote" placeholder="Sin ají, con más servilletas…" /></label>
+            </fieldset>
+
+            <fieldset class="step" data-panel="4">
+              <legend class="sr">Enviar</legend>
+              <div class="summary" id="summary"></div>
+              <a class="btn btn--wa btn--lg btn--block" id="sendWa" href="#" target="_blank" rel="noopener">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.7-.6 13.4 13.4 0 0 1-5.1-4.5c-.4-.5-1.1-1.6-1.1-3a3.3 3.3 0 0 1 1-2.5c.3-.3.6-.4.9-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.5Z"/></svg>
+                Enviar por WhatsApp
+              </a>
+            </fieldset>
+
+            <p class="f-msg" id="fMsg" aria-live="polite"></p>
+            <div class="f-nav">
+              <button type="button" class="btn btn--ghost" id="fBack" hidden>← Atrás</button>
+              <button type="button" class="btn btn--mustard" id="fNext">Siguiente →</button>
+            </div>
+          </form>
+
+          <aside class="phone" aria-label="Vista previa del mensaje">
+            <div class="phone__body">
+              <div class="phone__notch"></div>
+              <div class="phone__head">
+                <img src="/assets/img/logo.png" width="36" height="36" alt="" />
+                <div><b id="phName">Pollos Campeón</b><small id="phNum">+591 798-88975</small></div>
+              </div>
+              <div class="phone__chat" id="phChat">
+                <div class="bub bub--in">¡Hola! 🍗 Somos Pollos Campeón. ¿Qué te preparamos hoy?<time>12:00</time></div>
+                <div class="bub bub--out" id="phOut"></div>
+              </div>
+              <div class="phone__bar"><span>Mensaje</span><i></i></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANCHES -->
+    <section class="section section--cream" id="sucursales">
+      <div class="wrap">
+        <div class="head head--row">
+          <div>
+            <p class="eyebrow">Sucursales</p>
+            <h2 class="display">Siempre hay un Campeón <span class="hl">cerca.</span></h2>
+          </div>
+          <p class="clock" id="clock"></p>
+        </div>
+        <div class="branches" id="branches"></div>
+        <div class="deliv">
+          <div>
+            <p class="eyebrow eyebrow--ink">Delivery</p>
+            <h3 class="deliv__t">¿Te lo llevamos?</h3>
+            <ul class="deliv__list" id="delivList"></ul>
+          </div>
+          <a class="btn btn--red btn--lg" href="#pedir" data-intent="delivery">Armar mi pedido →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="section section--wine" id="historia">
+      <div class="wrap story">
+        <figure class="story__media reveal">
+          <img src="/assets/stores/story-letrero.webp" width="540" height="840" loading="lazy" alt="Letrero de Pollos Campeón en la sucursal Biopetrol" />
+        </figure>
+        <div class="story__txt">
+          <p class="eyebrow eyebrow--mustard">Nuestra historia</p>
+          <h2 class="display display--cream">Campeones <span class="hl hl--mustard">desde 1981.</span></h2>
+          <p>Empezamos en la Av. Cañoto 571, en pleno Casco Viejo, y ahí sigue latiendo nuestra casa matriz. Desde entonces el pollo a la brasa de Campeón se volvió parte de la mesa cruceña: almuerzos de familia, cumples, partidos y antojos de media tarde.</p>
+          <p>Hoy somos 15 sucursales en Santa Cruz de la Sierra, de los anillos a la Doble Vía La Guardia, y cada septiembre celebramos nuestro aniversario junto al mes de Santa Cruz. Misma tradición, mismo sabor de campeón. 🏆</p>
+          <ol class="timeline">
+            <li><b>1981</b><span>Nace la tradición en Av. Cañoto</span></li>
+            <li><b>15</b><span>Sucursales en Santa Cruz</span></li>
+            <li><b>Sept.</b><span>Nuestro mes aniversario</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="section section--cream" id="instagram">
+      <div class="wrap">
+        <div class="head head--row">
+          <div>
+            <p class="eyebrow">@polloscampeon.oficial</p>
+            <h2 class="display">Lo último en <span class="hl">Instagram.</span></h2>
+          </div>
+          <a class="btn btn--red" href="https://www.instagram.com/polloscampeon.oficial/" target="_blank" rel="noopener">Seguinos en Instagram ↗</a>
+        </div>
+        <div class="posts" id="posts"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="stripes" aria-hidden="true"></div>
+    <div class="wrap foot__in">
+      <div class="foot__brand">
+        <img src="/assets/img/logo-word.webp" width="985" height="401" loading="lazy" alt="Pollos Campeón" />
+        <p class="foot__sign">¡Nos vemos en Campeón!</p>
+      </div>
+      <div>
+        <h3>Visitanos</h3>
+        <p>15 sucursales en Santa Cruz de la Sierra.<br>Casa matriz: Av. Cañoto 571, esq. Junín.</p>
+        <p>Atención al cliente: <a href="tel:+59179899998">7989-9998</a><br>Pedidos: <a href="https://wa.me/59179888975" target="_blank" rel="noopener">798-88975</a></p>
+      </div>
+      <div>
+        <h3>Seguinos</h3>
+        <ul class="foot__links">
+          <li><a href="https://www.instagram.com/polloscampeon.oficial/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/PollosChampion" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://linktr.ee/polloscampeon" target="_blank" rel="noopener">Linktree</a></li>
+          <li><a href="#menu">Menú</a> · <a href="#promos">Promos</a> · <a href="#sucursales">Sucursales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap foot__bot">
+      <span>© <span id="year">2026</span> Pollos Campeón · Tradición desde 1981</span>
+      <span>Hecho con hambre en Santa Cruz de la Sierra 🍗</span>
+    </div>
+  </footer>
+
+  <!-- CALENDAR DIALOG -->
+  <div class="lightbox" id="calBox" role="dialog" aria-modal="true" aria-label="Calendario de promos" hidden>
+    <button class="lightbox__x" type="button" aria-label="Cerrar">×</button>
+    <img data-src="/assets/img/calendario-julio-2026.webp" width="1600" height="1067" alt="Calendario de promos de Pollos Campeón publicado para julio 2026: Combo Coca-Cola, Mundial, Fans, Champions y Triplete" />
+  </div>
+
+  <!-- CART DRAWER -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" hidden>
+    <div class="drawer__head">
+      <h2 id="drawerTitle">Tu pedido</h2>
+      <button class="icon-btn icon-btn--dark" type="button" id="drawerClose" aria-label="Cerrar">×</button>
+    </div>
+    <div class="drawer__body" id="drawerBody"></div>
+    <div class="drawer__foot" id="drawerFoot">
+      <div class="drawer__total"><span>Total</span><b id="drawerTotal">Bs 0</b></div>
+      <button class="btn btn--red btn--lg btn--block" type="button" id="drawerGo">Continuar pedido →</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- CHAT -->
+  <button class="ai-fab" type="button" data-campeia-open aria-label="Abrir Campe-IA, recepcionista virtual">
+    <img src="/assets/img/logo.png" width="40" height="40" alt="" />
+    <span><b>Campe-IA</b><small>¿Te ayudo?</small></span>
+    <i class="dot"></i>
+  </button>
+  <section class="chat" id="chat" role="dialog" aria-modal="false" aria-labelledby="chatTitle" hidden>
+    <header class="chat__head">
+      <img src="/assets/img/logo.png" width="40" height="40" alt="" />
+      <div><h2 id="chatTitle">Campe-IA</h2><small><i class="dot"></i> Recepcionista virtual de Pollos Campeón</small></div>
+      <button class="icon-btn" type="button" id="chatClose" aria-label="Cerrar chat">×</button>
+    </header>
+    <div class="chat__log" id="chatLog" aria-live="polite"></div>
+    <div class="chat__sugs" id="chatSugs"></div>
+    <form class="chat__form" id="chatForm">
+      <label class="sr" for="chatIn">Escribí tu pregunta</label>
+      <input id="chatIn" autocomplete="off" maxlength="1200" placeholder="Preguntame lo que quieras…" />
+      <button type="submit" aria-label="Enviar">➤</button>
+    </form>
+    <p class="chat__disc">Campe-IA es una IA y puede equivocarse. Confirmá tu pedido por WhatsApp.</p>
+  </section>
+
+  <!-- MOBILE BAR -->
+  <div class="mbar" id="mbar">
+    <button class="mbar__ai" type="button" data-campeia-open aria-label="Abrir Campe-IA"><img src="/assets/img/logo.png" width="36" height="36" alt="" /></button>
+    <button class="mbar__cart" type="button" id="mbarCart" hidden><b id="mbarCount">0</b><span id="mbarTotal">Bs 0</span></button>
+    <a class="btn btn--mustard mbar__cta" href="#pedir" data-intent="delivery">Pedí por WhatsApp →</a>
+  </div>
+
+  <script src="/js/data.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

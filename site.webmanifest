@@ -1,0 +1,14 @@
+{
+  "name": "Pollos Campeón",
+  "short_name": "Campeón",
+  "description": "El pollo #1 de Bolivia. Tradición desde 1981.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdf5e8",
+  "theme_color": "#e3283f",
+  "lang": "es-BO",
+  "icons": [
+    { "src": "/assets/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/assets/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
